@@ -1,0 +1,73 @@
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*Esto hace que el tamaño del html y el body, tome toda la pantalla*/
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/*Creamos el div para el loader*/
+#contenedor_carga {
+    background-color: #262626;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+/*Centramos la imagen del loader, en div contenedor_carga*/
+#carga .img_carga {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/*Redimensionamos el logo, del nav*/
+#logo {
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 125px;
+}
+
+/*Cambio el color del Navbar*/
+nav {
+    background: #5c6bc0;
+    transition: 300ms all ease;
+}
+
+/*Colores a los diferentes fonts*/
+.color-blanco {
+    color: #fff;
+}
+
+.color-negro {
+    color: #000;
+}
+
+/*Personalización a cuadros*/
+.cuadro {
+    background: #FFF;
+    color: #FFF;
+    border-radius: 1em 1em 1em 1em;
+    padding: 1em 1em 1em 1em;
+    box-shadow: 3px 3px 10px #000;
+}
+
+/* label color */
+.input-field label {
+    color: #000;
+  }
