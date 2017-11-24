@@ -71,3 +71,34 @@ nav {
 .input-field label {
     color: #000;
   }
+  
+  /*Permite que el footer sea pegadiso al final de la página*/
+  body {
+    display: flex;
+    min-height: 100vmin;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  /*Cambio el color del Footer*/
+footer {
+    background: #5c6bc0 !important;
+    transition: 300ms all ease;
+}
+
+/*Forma para el logo del salvador en el footer*/
+#elsalvador {
+    width: 25px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/*Forma para el logo en el footer*/
+#logo-footer {
+    width: 60px;
+    height: 20px;
+    margin-right: 10px;
+}

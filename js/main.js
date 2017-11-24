@@ -4,10 +4,9 @@ window.addEventListener('load', function() {
 })
 
 $(document).ready(function(){
-    $(".button-collapse").sideNav();
+    $('.sidenav').sidenav();
     $('.slider').slider({
         indicators: false,
     });
-    $('.parallax').parallax();
     Materialize.updateTextFields();
 });

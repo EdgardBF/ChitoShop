@@ -19,6 +19,12 @@
             <label for="password">Contraseña</label>
           </div>
         </div>
+        <div class="row">
+          <button class="col s12 m6 offset-m3 btn waves-effect indigo lighten-1" type="submit" name="action">Ingresar
+            <i class="material-icons left">launch</i>
+            <i class="material-icons right">launch</i>
+          </button>
+        </div>
       </form>
   </div>
 <?php

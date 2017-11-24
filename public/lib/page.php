@@ -19,6 +19,7 @@
                         <title>".$title."</title>
                         <!--Se llaman los archivos CSS-->
                         <link type='text/css' rel='stylesheet' href='../css/materialize.css'>
+                        <link type='text/css' rel='stylesheet' href='../css/materialize.min.css'>
                         <link type='text/css' rel='stylesheet' href='../css/sweetalert2.css'/>
                         <link type='text/css' rel='stylesheet' href='../css/main.css'>
                         <link type='text/css' rel='stylesheet' href='../css/icons.css'>
@@ -30,6 +31,7 @@
                         <div id='contenedor_carga'>
                             <div id='carga'><img class='img_carga' src='../img/loading.gif'></div>
                         </div>
+                        <main>
             ");
         }
 
@@ -41,7 +43,7 @@
                     <nav>
                         <div class='nav-wrapper'>
                             <a href='#!' class='brand-logo'><img id='logo' src='../img/logo-blanco.png'></a>
-                            <a href='#' data-activates='mobile-demo' class='button-collapse'><i class='material-icons color-blanco'>menu</i></a>
+                            <a href='#' data-target='mobile-demo' class='sidenav-trigger button-collapse'><i class='material-icons'>menu</i></a>                            
                             <ul class='right hide-on-med-and-down'>
                                 <li class='"); if($title=="Index"){print("active");}print("'><a href='"); if($title=="Index"){print("#");} else if($title=="Login"){print("index.php");} else {print("../index.php");} print("' class='color-blanco'>Inicio<i class='material-icons right color-blanco'>home</i></a></li>
                                 <li class='"); if($title=="Login"){print("active");}print("'><a href='"); if($title=="Login"){print("#");} else if($title=="Index"){print("login.php");} else {print("../login.php");} print("' class='color-blanco'>Login<i class='material-icons right color-blanco'>mood</i></a></li>
@@ -49,7 +51,7 @@
                         </div>
                     </nav>
                 </div>
-                <ul class='side-nav' id='mobile-demo'>
+                <ul class='sidenav' id='mobile-demo'>
                     <li class='"); if($title=="Index"){print("active");}print("'><a href='"); if($title=="Index"){print("#");} else if($title=="Login"){print("index.php");} else {print("../index.php");} print("' class='color-blanco'>Inicio<i class='material-icons left color-blanco'>home</i></a></li>
                     <li class='"); if($title=="Login"){print("active");}print("'><a href='"); if($title=="Login"){print("#");} else if($title=="Index"){print("login.php");} else {print("../login.php");} print("' class='color-blanco'>Login<i class='material-icons left color-blanco'>mood</i></a></li>
                 </ul>
@@ -60,11 +62,36 @@
         {
             print
             ("
+                        </main>
                     </body>
-                    <footer>
-                    </footer>  
+                    <footer class='page-footer'>
+                    <div class='container'>
+                      <div class='row'>
+                        <div class='col l6 s12'>
+                          <h5 class='white-text'>Footer Content</h5>
+                          <p class='grey-text text-lighten-4'>You can use rows and columns here to organize your footer content.</p>
+                        </div>
+                        <div class='col l4 offset-l2 s12'>
+                          <h5 class='white-text'>Links</h5>
+                          <ul>
+                            <li><a class='grey-text text-lighten-3' href='#!'>Link 1</a></li>
+                            <li><a class='grey-text text-lighten-3' href='#!'>Link 2</a></li>
+                            <li><a class='grey-text text-lighten-3' href='#!'>Link 3</a></li>
+                            <li><a class='grey-text text-lighten-3' href='#!'>Link 4</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class='footer-copyright'>
+                      <div class='container'>
+                      <i class='material-icons left'>copyright</i>2017-2018 Copyright
+                      <p class='grey-text text-lighten-4 right'><img id='elsalvador' src='../img/elsalvador.png'>El Salvador | The Chito's Shop <img id='logo-footer' src='../img/logo-blanco.png'></p>
+                      </div>
+                    </div>
+                  </footer>  
                     <script src='../js/jquery-3.2.1.js'></script>
                     <script src='../js/materialize.js'></script>
+                    <script src='../js/materialize.min.js'></script>
                     <script src='../js/main.js'></script>
                     <script src='../js/sweetalert2.js'></script>
                 </html>
